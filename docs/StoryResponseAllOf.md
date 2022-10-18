@@ -1,0 +1,53 @@
+
+# asana.Model.StoryResponseAllOf
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**CreatedBy** | [**UserCompact**](UserCompact.md) |  | [optional] 
+**Type** | **string** |  | [optional] [readonly] 
+**IsEditable** | **bool** | *Conditional*. Whether the text of the story can be edited after creation. | [optional] [readonly] 
+**IsEdited** | **bool** | *Conditional*. Whether the text of the story has been edited after creation. | [optional] [readonly] 
+**Hearted** | **bool** | *Deprecated - please use likes instead* *Conditional*. True if the story is hearted by the authorized user, false if not. | [optional] [readonly] 
+**Hearts** | [**List&lt;Like&gt;**](Like.md) | *Deprecated - please use likes instead*  *Conditional*. Array of likes for users who have hearted this story. | [optional] [readonly] 
+**NumHearts** | **int** | *Deprecated - please use likes instead*  *Conditional*. The number of users who have hearted this story. | [optional] [readonly] 
+**Liked** | **bool** | *Conditional*. True if the story is liked by the authorized user, false if not. | [optional] [readonly] 
+**Likes** | [**List&lt;Like&gt;**](Like.md) | *Conditional*. Array of likes for users who have liked this story. | [optional] [readonly] 
+**NumLikes** | **int** | *Conditional*. The number of users who have liked this story. | [optional] [readonly] 
+**Previews** | [**List&lt;Preview&gt;**](Preview.md) | *Conditional*. A collection of previews to be displayed in the story.  *Note: This property only exists for comment stories.* | [optional] [readonly] 
+**OldName** | **string** | *Conditional*&#39; | [optional] 
+**NewName** | **string** | *Conditional* | [optional] [readonly] 
+**OldDates** | [**StoryResponseDates**](StoryResponseDates.md) |  | [optional] 
+**NewDates** | [**StoryResponseDates**](StoryResponseDates.md) |  | [optional] 
+**OldResourceSubtype** | **string** | *Conditional* | [optional] [readonly] 
+**NewResourceSubtype** | **string** | *Conditional* | [optional] [readonly] 
+**Story** | [**StoryCompact**](StoryCompact.md) |  | [optional] 
+**Assignee** | [**UserCompact**](UserCompact.md) |  | [optional] 
+**Follower** | [**UserCompact**](UserCompact.md) |  | [optional] 
+**OldSection** | [**SectionCompact**](SectionCompact.md) |  | [optional] 
+**NewSection** | [**SectionCompact**](SectionCompact.md) |  | [optional] 
+**Task** | [**TaskCompact**](TaskCompact.md) |  | [optional] 
+**Project** | [**ProjectCompact**](ProjectCompact.md) |  | [optional] 
+**Tag** | [**TagCompact**](TagCompact.md) |  | [optional] 
+**CustomField** | [**CustomFieldCompact**](CustomFieldCompact.md) |  | [optional] 
+**OldTextValue** | **string** | *Conditional* | [optional] [readonly] 
+**NewTextValue** | **string** | *Conditional* | [optional] [readonly] 
+**OldNumberValue** | **int** | *Conditional* | [optional] [readonly] 
+**NewNumberValue** | **int** | *Conditional* | [optional] [readonly] 
+**OldEnumValue** | [**EnumOption**](EnumOption.md) |  | [optional] 
+**NewEnumValue** | [**EnumOption**](EnumOption.md) |  | [optional] 
+**OldMultiEnumValues** | [**List&lt;EnumOption&gt;**](EnumOption.md) | *Conditional* | [optional] [readonly] 
+**NewMultiEnumValues** | [**List&lt;EnumOption&gt;**](EnumOption.md) | *Conditional* | [optional] [readonly] 
+**NewApprovalStatus** | **string** | *Conditional* | [optional] [readonly] 
+**OldApprovalStatus** | **string** | *Conditional* | [optional] [readonly] 
+**DuplicateOf** | [**TaskCompact**](TaskCompact.md) |  | [optional] 
+**DuplicatedFrom** | [**TaskCompact**](TaskCompact.md) |  | [optional] 
+**Dependency** | [**TaskCompact**](TaskCompact.md) |  | [optional] 
+**Source** | **string** | The component of the Asana product the user used to trigger the story. | [optional] [readonly] 
+**Target** | [**TaskCompact**](TaskCompact.md) |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to README]](../README.md)
+
